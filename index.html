@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #ccc;
+    }
+    h1 {
+      color: blue;
+      font-size: 32px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enter your name:</h1>
+  <input id="name_textbox" type="text">
+  <button id="display_button">Display Name</button>
+  <script>
+    var displayButton = document.getElementById('display_button');
+    displayButton.addEventListener('click', function() {
+      var nameTextbox = document.getElementById('name_textbox');
+      var name = nameTextbox.value;
+      alert(name);
+    });
+  </script>
+</body>
+</html>
